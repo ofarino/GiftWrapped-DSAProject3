@@ -16,6 +16,7 @@ struct Node {
 };
 
 class Graph {
+public:
     map<string, Node> graph;
     void addNode(const string& label);
     void addEdge(const string& from, const string& to);
