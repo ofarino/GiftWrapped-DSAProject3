@@ -1,22 +1,18 @@
-//
-// Created by Olivia Farino on 4/8/25.
-//
-
 #ifndef GRAPH_H
 #define GRAPH_H
+
 #pragma once
 #include <iostream>
 #include <map>
 #include <string>
 #include <vector>
 #include <string>
-using namespace std;
 
+using namespace std;
 
 struct Node {
     string label;
     vector<Node*> neighbors;
-
 };
 
 class Graph {
@@ -24,9 +20,6 @@ class Graph {
     void addNode(const string& label);
     void addEdge(const string& from, const string& to);
     vector<string> traverse(const vector<string>& userInput);
-
 };
-
-
 
 #endif //GRAPH_H
